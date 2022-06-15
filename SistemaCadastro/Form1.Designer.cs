@@ -172,6 +172,7 @@
             // radioM
             // 
             this.radioM.AutoSize = true;
+            this.radioM.Checked = true;
             this.radioM.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioM.Location = new System.Drawing.Point(6, 37);
             this.radioM.Name = "radioM";
