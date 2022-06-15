@@ -39,9 +39,9 @@
             this.checkCasa = new System.Windows.Forms.CheckBox();
             this.checkVeiculo = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioO = new System.Windows.Forms.RadioButton();
             this.radioM = new System.Windows.Forms.RadioButton();
             this.radioF = new System.Windows.Forms.RadioButton();
-            this.radioO = new System.Windows.Forms.RadioButton();
             this.lista = new System.Windows.Forms.ListBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -157,6 +157,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sexo";
             // 
+            // radioO
+            // 
+            this.radioO.AutoSize = true;
+            this.radioO.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioO.Location = new System.Drawing.Point(6, 89);
+            this.radioO.Name = "radioO";
+            this.radioO.Size = new System.Drawing.Size(60, 20);
+            this.radioO.TabIndex = 12;
+            this.radioO.TabStop = true;
+            this.radioO.Text = "Outro";
+            this.radioO.UseVisualStyleBackColor = true;
+            // 
             // radioM
             // 
             this.radioM.AutoSize = true;
@@ -181,18 +193,6 @@
             this.radioF.Text = "Feminino";
             this.radioF.UseVisualStyleBackColor = true;
             // 
-            // radioO
-            // 
-            this.radioO.AutoSize = true;
-            this.radioO.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioO.Location = new System.Drawing.Point(6, 89);
-            this.radioO.Name = "radioO";
-            this.radioO.Size = new System.Drawing.Size(60, 20);
-            this.radioO.TabIndex = 12;
-            this.radioO.TabStop = true;
-            this.radioO.Text = "Outro";
-            this.radioO.UseVisualStyleBackColor = true;
-            // 
             // lista
             // 
             this.lista.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -211,6 +211,7 @@
             this.btnCadastrar.TabIndex = 14;
             this.btnCadastrar.Text = "Cadastrar / Alterar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnExcluir
             // 
@@ -220,6 +221,7 @@
             this.btnExcluir.TabIndex = 15;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnLimpar
             // 
@@ -229,6 +231,7 @@
             this.btnLimpar.TabIndex = 16;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // Form1
             // 
