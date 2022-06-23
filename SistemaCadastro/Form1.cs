@@ -128,5 +128,38 @@ namespace SistemaCadastro
                 lista.Items.Add(pessoa.Nome);
             }
         }
+
+        private void lista_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lista_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            int indice = lista.SelectedIndex;
+            Pessoa pessoa = pessoas[indice];
+
+            txtNome.Text = pessoa.Nome;
+            txtData.Text = pessoa.DataNascimento;
+            txtTelefone.Text = pessoa.Telefone;
+            comboEC.SelectedItem = pessoa.EstadoCivil;
+            checkCasa.Checked = pessoa.CasaPropria;
+            checkVeiculo.Checked = pessoa.Veiculo;
+
+            switch (pessoa.Sexo)
+            {
+                case 'M':
+                    radioM.Checked = true;
+                    break;
+
+                case 'F':
+                    radioF.Checked = true;
+                    break;
+
+                default:
+                    radioO.Checked = true;
+                    break;
+            }
+        }
     }
 }

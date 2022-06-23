@@ -203,6 +203,8 @@
             this.lista.Name = "lista";
             this.lista.Size = new System.Drawing.Size(793, 204);
             this.lista.TabIndex = 13;
+            this.lista.SelectedIndexChanged += new System.EventHandler(this.lista_SelectedIndexChanged);
+            this.lista.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lista_MouseDoubleClick);
             // 
             // btnCadastrar
             // 
